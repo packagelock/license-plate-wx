@@ -1,0 +1,102 @@
+.overlayBox {
+  width: 100vw;
+  height: 100vh;
+  position: fixed;
+  background-color: rgba(0, 0, 0, 0.4);
+  z-index: 5003;
+  top: 0;
+  left: 0;
+  transition: all 0.3s;
+}
+
+.Box {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 750rpx;
+  height: 520rpx;
+  background: #d1d6d9;
+}
+
+.flex {
+  display: flex;
+}
+.por {
+  position: relative;
+}
+.poa {
+  position: absolute;
+}
+.flex-row-center {
+  justify-content: center;
+}
+
+.flex-col-center {
+  align-items: center;
+}
+
+.flex-ju-ev {
+  justify-content: space-evenly;
+}
+
+.flex-warp {
+  flex-wrap: wrap;
+}
+
+.header {
+  width: 750rpx;
+  height: 88rpx;
+  background-color: #fff;
+}
+
+.header .title {
+  color: #4166f5;
+  font-weight: 800;
+  /* margin-left: 310rpx; */
+}
+
+.header .confirm {
+  color: #4166f5;
+  font-weight: 800;
+  right: 32rpx;
+}
+
+.main {
+  background-color: #d1d6d9;
+  width: 750rpx;
+  height: 440rpx;
+}
+
+.main .close {
+  width: 142rpx !important;
+}
+
+.main .abc {
+  width: 142rpx !important;
+}
+
+.main .w108 {
+  width: 216rpx !important;
+}
+
+.main .provinces {
+  width: 70rpx;
+  height: 80rpx;
+  background-color: #fff;
+  color: #000;
+  text-align: center;
+  line-height: 80rpx;
+  border-radius: 10rpx;
+  margin-top: 12rpx;
+  box-shadow: 0px 2rpx 4rpx #333333;
+}
+
+.main .provinces:active {
+  background-color: gray !important;
+  color: #fff;
+}
+
+.main .provinces .closeIcon {
+  width: 64rpx;
+  height: 64rpx;
+}

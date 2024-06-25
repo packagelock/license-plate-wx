@@ -1,0 +1,36 @@
+<view class="overlayBox" wx:if="{{licensePlateShow}}" catchtap="onOverlay">
+	<view class="Box">
+		<view class="header flex flex-row-center flex-col-center por">
+			<view class="confirm poa" style="left: 32rpx;color: #000;opacity: .7;" catchtap="onCancel">取消</view>
+			<view class="title">{{licensePlate || title}}</view>
+			<view class="confirm poa" catchtap="confirm">完成</view>
+		</view>
+		<view class="main" wx:if="{{!licensePlateLetter}}">
+			<view class="flex flex-ju-ev flex-warp">
+				<view class="provinces" wx:for="{{provinceText}}" wx:key="item" catchtap="onText" data-item="{{item}}">{{item}}</view>
+			</view>
+			<view class="flex flex-ju-ev">
+				<view class="provinces abc" style="background:#b2bcc5" catchtap="changeToLetter">abc</view>
+				<view class="provinces" wx:for="{{lastWordText}}" wx:key="item" catchtap="onText" data-item="{{item}}">{{item}}</view>
+				<view class="provinces close flex flex-col-center flex-row-center" style="background:#b2bcc5;" catchtap="deleteText">
+					<image src="./del.svg" style="width: 24rpx;height: 24rpx;"></image>
+				</view>
+			</view>
+		</view>
+		<view class="main" wx:if="{{licensePlateLetter}}">
+			<view class="flex flex-ju-ev flex-warp">
+				<view class="provinces" wx:for="{{numText}}" wx:key="item" catchtap="onText" data-item="{{item}}">{{item}}</view>
+			</view>
+			<view class="flex flex-ju-ev flex-warp">
+				<view class="provinces" wx:for="{{wordText}}" wx:key="item" catchtap="onText" data-item="{{item}}">{{item}}</view>
+			</view>
+			<view class="flex flex-ju-ev">
+				<view class="provinces w108" style="background:#b2bcc5" catchtap="changeToLetter">字</view>
+				<view class="provinces" wx:for="{{lastWordText2}}" wx:key="item" catchtap="onText" data-item="{{item}}">{{item}}</view>
+				<view class="provinces w108 close flex flex-col-center flex-row-center" style="background:#b2bcc5;" catchtap="deleteText">
+					<image src="./del.svg" style="width: 24rpx;height: 24rpx;"></image>
+				</view>
+			</view>
+		</view>
+	</view>
+</view>

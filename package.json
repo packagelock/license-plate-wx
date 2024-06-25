@@ -1,0 +1,20 @@
+{
+  "name": "license-plate-wx",
+  "version": "1.0.2",
+  "main": "index.js",
+  "miniprogram": "src",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "github:packagelock",
+  "license": "ISC",
+  "description": "微信小程序 车牌输入键盘",
+  "keywords": [
+    "微信小程序",
+    "车牌输入",
+    "车牌键盘",
+    "车牌号",
+    "小程序",
+    "微信"
+  ]
+}
